@@ -44,7 +44,6 @@ const containBox = (data) => {
 }
 
 const sect = document.querySelector('#Contain')
-const Loaddata = document.querySelector('#LoadData')
 const CryptoAllJson = (url) => {
     fetch(url, {
 
@@ -52,7 +51,7 @@ const CryptoAllJson = (url) => {
         .then(response => response.json())
         .then(data => {
             // LoadData(data, 0)
-
+            console.log(data,'gtgt')
             data.forEach(DataOn => {
                 LoadData(DataOn, data.indexOf(DataOn))
             })
