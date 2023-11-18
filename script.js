@@ -5,7 +5,6 @@ const CryptoJson = (url) => {
     })
         .then(response => response.json())
         .then(data => {
-            console.log('data', data)
             containBox(data)
         })
         .catch(err => {
@@ -51,7 +50,6 @@ const CryptoAllJson = (url) => {
         .then(response => response.json())
         .then(data => {
             // LoadData(data, 0)
-            console.log(data,'gtgt')
             data.forEach(DataOn => {
                 LoadData(DataOn, data.indexOf(DataOn))
             })
@@ -116,7 +114,7 @@ const LoadData = (data, indexNum) => {
             })
 
             localStorage.setItem('ids', JSON.stringify(ids))
-            console.log('hihiih')
+            console.log('done')
         }
         else {
 
