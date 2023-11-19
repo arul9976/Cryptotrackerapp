@@ -60,8 +60,8 @@ const CryptoAllJson = (url) => {
         })
 }
 
-// CryptoAllJson('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en')
-CryptoAllJson('../data.json')
+CryptoAllJson('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en')
+// CryptoAllJson('../data.json')
 const LoadData = (data, indexNum) => {
     const colData = document.createElement('div')
     colData.className = 'colData'
